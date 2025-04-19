@@ -13,7 +13,7 @@ key = st.secrets["SUPABASE_KEY"]
 supabase: Client = create_client(url, key)
 
 # CSS
-with open("src/style.css") as f:
+with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # タイトル
